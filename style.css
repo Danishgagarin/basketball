@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+            font-family: 'DSEG7Classic';
+            src: url('https://cdn.jsdelivr.net/npm/dseg@0.46.0/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+}
+
+
+.timer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.timer-section .black-rectangle{
+    width: 200px;
+    height: 80px;
+}
+
+.timer-section button{
+    margin-top: 10px;
+    background-color: #1B244A;
+    border: 1px solid #9AABD8;
+    border-radius: 8px;
+    color: #9AABD8;
+}
+
+.timer-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 575px;   
+    min-height: 385px;
+    background-color: #1B244A;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.home-section {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guest-section {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.black-rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    background-color: black;
+}
+
+.increment-buttons{
+    margin-top: 20px;
+    display: flex;
+    width: 155px;
+    height: 45px;
+
+}
+
+.increment-buttons button{
+    flex-grow: 1;
+    margin: 3px;
+    box-sizing: border-box;
+    border: 1px solid #9AABD8;
+    border-radius: 8px;
+    background-color: #1B244A;
+    color: #9AABD8;;
+}
+
+#home-score, #guest-score{
+    font-family: 'DSEG7Classic', monospace;
+    font-size: 90px;
+    color: #39ff14;
+     text-shadow:
+        0 0 3px #39ff14,
+        0 0 3px #39ff14,
+        0 0 3px #39ff14,
+        0 0 3px #00ff00;
+}
+
+.reset-button{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+}
+
+.reset-button button{
+    padding: 10px 25px;
+    background-color: #1B244A;
+    border: 1px solid #9AABD8;
+    border-radius: 8px;
+    color: #9AABD8;
+}

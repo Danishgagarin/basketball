@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="timer-section">
+                <h3>GAMETIMER</h3>
+                <div class="black-rectangle">
+                        <h2 id="timer">05:00</h2>
+                </div>
+                <div class="timer-buttons">
+                    <button type="button" id="start-btn" onclick="beginCountdown()">Start</button>
+                    <button type="button" id="pause-btn" onclick="pauseCountdown()">Pause</button>
+                    <button type="button" id="reset-timer-btn" onclick="resetCountdown()">Reset</button>
+                </div>
+            </div>
+            
+            <div class="scoreboard">
+                <div class="home-section">
+                    <h3>HOME</h3>
+                    <div class="black-rectangle">
+                        <h2 id="home-score">0</h2>
+                    </div>
+                    <div class="increment-buttons">
+                        <button type="button" onclick="addScore('home', 1)">+1</button>
+                        <button type="button" onclick="addScore('home', 2)">+2</button>
+                        <button type="button" onclick="addScore('home', 3)">+3</button>
+                    </div>
+                </div>
+                <div class="guest-section">
+                    <h3>GUEST</h3>
+                    <div class="black-rectangle">
+                        <h2 id="guest-score">0</h2>
+                    </div>
+                    <div class="increment-buttons">
+                        <button type="button" onclick="addScore('guest', 1)">+1</button>
+                        <button type="button" onclick="addScore('guest', 2)">+2</button>
+                        <button type="button" onclick="addScore('guest', 3)">+3</button>
+                    </div>    
+                </div>
+            </div>
+            
+            <div class=reset-button>
+                <button type="button" onclick="newGame()">New Game</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
